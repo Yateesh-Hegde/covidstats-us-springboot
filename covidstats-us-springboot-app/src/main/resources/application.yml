@@ -1,0 +1,18 @@
+spring.codec.max-in-memory-size: 20MB
+spring.mvc.pathmatch.matching-strategy: ant-path-matcher
+
+server.servlet.context-path: /covidstats
+
+spring.datasource.url: jdbc:h2:mem:testdb
+spring.datasource.driverClassName: org.h2.Driver
+spring.datasource.username: sa
+spring.datasource.password: password
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled: true
+
+
+covidapi.baseURL: https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats
+covidapi.rapid_api_new_key: ab53175f5fmshb1b629e039cce02p14e461jsn4e3585f75089
+covidapi.rapid_api_host: covid-19-coronavirus-statistics.p.rapidapi.com
+covidapi.data_refresh_interval: 600000
+    
